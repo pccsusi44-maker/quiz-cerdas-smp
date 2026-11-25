@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Cerdas SMP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎓 QUIZ CERDAS</h1>
+        <p>Game Kuis dan Tebak-Tebakan Anak SMP</p>
+    </header>
+
+    <main>
+        <section id="home" class="container">
+            <h2>Selamat Datang! 👋</h2>
+            <p>Uji pengetahuanmu dengan menjawab berbagai pertanyaan seru!</p>
+            <button onclick="tampilkanKategori()">Mulai Bermain</button>
+        </section>
+
+        <section id="kategori" class="container hidden">
+            <h2>Pilih Kategori Kuis</h2>
+            <div id="daftarKategori" class="kategori-grid"></div>
+        </section>
+
+        <section id="kuis" class="container hidden">
+            <div class="info-kuis">
+                <span id="nomorSoal"></span>
+                <span id="skor">Skor: 0</span>
+            </div>
+            <h2 id="pertanyaan"></h2>
+            <div id="pilihanJawaban"></div>
+            <p id="pesan"></p>
+            <button id="tombolLanjut" class="hidden" onclick="soalBerikutnya()">Soal Berikutnya</button>
+        </section>
+
+        <section id="hasil" class="container hidden">
+            <h2>🎉 Kuis Selesai!</h2>
+            <p id="nilaiAkhir"></p>
+            <p id="pesanHasil"></p>
+            <button onclick="tampilkanKategori()">Main Lagi</button>
+            <button onclick="kembaliKeAwal()">Beranda</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Quiz Cerdas SMP © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

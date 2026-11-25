@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #dce9ff, #eee1ff, #fff0cf);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(120deg, #536dfe, #9b59e9);
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 0 4px 12px #0002;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px #0002;
+    text-align: center;
+}
+
+.container h2 {
+    color: #536dfe;
+    margin-bottom: 15px;
+}
+
+.container p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+button {
+    border: none;
+    background: linear-gradient(120deg, #536dfe, #9b59e9);
+    color: white;
+    padding: 13px 25px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 8px 4px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px #536dfe55;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.kategori-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.kategori-card {
+    background: #f0f3ff;
+    border: 2px solid #e0e5ff;
+    border-radius: 15px;
+    padding: 22px 10px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.kategori-card:hover {
+    background: #e2e7ff;
+    border-color: #536dfe;
+    transform: scale(1.04);
+}
+
+.info-kuis {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background: #f0f3ff;
+    padding: 13px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #536dfe;
+}
+
+#pertanyaan {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+#pilihanJawaban {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#pilihanJawaban button {
+    width: 100%;
+    margin: 0;
+    background: #f0f3ff;
+    color: #333;
+    border: 2px solid #dce2ff;
+    text-align: left;
+}
+
+#pilihanJawaban button:hover {
+    background: #e1e7ff;
+}
+
+#pilihanJawaban button:disabled {
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+#pesan {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#nilaiAkhir {
+    font-size: 28px;
+    font-weight: bold;
+    color: #536dfe;
+}
+
+footer {
+    background: #536dfe;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 500px) {
+    .kategori-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 22px 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
